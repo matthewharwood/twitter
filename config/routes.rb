@@ -1,9 +1,8 @@
 Twitter::Application.routes.draw do
-  #root :to => 'pages#home'
-  #match 'pages/contact' => 'home#contact', as: 'contact'
-  get 'pages/home'
-  get 'pages/contact'
-  get 'pages/about'
+  root :to => 'pages#home'
+  match '/about' => 'pages#about', as: 'about'
+  match '/contact' => 'pages#contact', as: 'contact'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
