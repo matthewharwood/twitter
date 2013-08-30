@@ -1,9 +1,9 @@
 
-	<h2>Pages#home</h2>
+	<h2><%= @title %></h2>
 	<p>Find me in app/views/pages/home.html.erb</p>
 	<!-- Button trigger modal -->
-	  <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
-
+	
+		<%= link_to "Sign Up Now!", signup_path(), :class => "btn btn-primary btn-lg" %>
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
